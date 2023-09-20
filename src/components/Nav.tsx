@@ -1,7 +1,7 @@
 import Image from 'next/image';
 
-import { headerLogo } from '../../../public/images';
-import { hamburger } from '../../../public/icons';
+import { headerLogo } from '../../public/images';
+import { hamburger } from '../../public/icons';
 import { navLinks } from '@/constants';
 import Link from 'next/link';
 

@@ -1,22 +1,26 @@
 import { Metadata } from 'next';
-import Nav from './components/Nav';
-import CustomerReviews from './sections/CustomerReviews';
-import Footer from './sections/Footer';
-import Hero from './sections/Hero';
-import PopularProducts from './sections/PopularProducts';
-import Services from './sections/Services';
-import SpecialOffers from './sections/SpecialOffers';
-import Subscribe from './sections/Subscribe';
-import SuperQuality from './sections/SuperQuality';
+
+import Nav from '../components/Nav';
+import {
+  CustomerReviews,
+  Hero,
+  PopularProducts,
+  SuperQuality,
+  Services,
+  SpecialOffers,
+  Subscribe,
+  Footer,
+} from '../components/sections';
 
 export const metadata: Metadata = {
   title: 'Nike',
+  description: 'Nike landing page',
 };
 
 const Home = () => (
   <main className="relative">
     <Nav />
-    <section className="xl:padding-1 wide:padding-r padding-b">
+    <section className="xl:padding-l wide:padding-r padding-b">
       <Hero />
     </section>
     <section className="padding">
