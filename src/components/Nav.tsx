@@ -7,25 +7,25 @@ import Link from 'next/link';
 
 const Nav = () => {
   return (
-    <header className="padding-x py-8 absolute z-10 w-full">
-      <nav className="flex justify-between items-center max-container">
-        <a href="/">
-          <Image src={headerLogo} alt="Logo" width={130} height={29} />
+    <header className='padding-x absolute z-10 w-full py-8'>
+      <nav className='max-container flex items-center justify-between'>
+        <a href='/'>
+          <Image src={headerLogo} alt='Logo' width={130} height={29} />
         </a>
-        <ul className="max-lg:hidden flex flex-1 justify-center items-center gap-16">
+        <ul className='flex flex-1 items-center justify-center gap-16 max-lg:hidden'>
           {navLinks.map(({ href, label }) => (
             <li key={label}>
               <Link
                 href={href}
-                className="font-montserrat leading-normal text-lg text-slate-gray"
+                className='font-montserrat text-lg leading-normal text-slate-gray'
               >
                 {label}
               </Link>
             </li>
           ))}
         </ul>
-        <div className="max-lg:block hidden">
-          <Image src={hamburger} width={25} height={25} alt="Hamburger" />
+        <div className='hidden max-lg:block'>
+          <Image src={hamburger} width={25} height={25} alt='Hamburger' />
         </div>
       </nav>
     </header>

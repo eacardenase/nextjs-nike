@@ -7,9 +7,9 @@ interface IButton {
 }
 
 const Button = ({ label, iconUrl, iconAlt }: IButton) => (
-  <button className="flex justify-center items-center gap-2 px-7 py-4 border font-montserrat text-lg leading-none bg-coral-red rounded-full text-white border-coral-red">
+  <button className='flex items-center justify-center gap-2 rounded-full border border-coral-red bg-coral-red px-7 py-4 font-montserrat text-lg leading-none text-white'>
     {label}
-    <Image src={iconUrl} alt={iconAlt} className="ml-2 rounded-full w-5 h-5" />
+    <Image src={iconUrl} alt={iconAlt} className='ml-2 h-5 w-5 rounded-full' />
   </button>
 );
 
